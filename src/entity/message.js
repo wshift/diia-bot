@@ -9,10 +9,5 @@ module.exports = class Message {
   async reply(text, buttonsArray) {
     const keyboard = buttonsArray ? Markup.keyboard(buttonsArray).oneTime().resize().extra() : null;
     await this.ctx.reply(text, keyboard);
-    // if (buttonsArray) {
-    //   this.ctx.reply(text, keyboard);
-    // } else {
-    //   this.ctx.reply(text);
-    // }
   }
 };

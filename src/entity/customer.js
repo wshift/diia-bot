@@ -7,14 +7,4 @@ module.exports = class Customer {
     this.scene = SCENES.GREETING;
     this.step = STEP.ONE;
   }
-
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-  // set scene(value) {
-  //   this.scene = value;
-  // }
-  // set step(value) {
-  //   this.step = value;
-  // }
 };
